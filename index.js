@@ -12,7 +12,7 @@ const port = 3001;
 
 Conn()
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.info(`App rodando em: localhost:${port}`)
 })
 
